@@ -26,4 +26,4 @@ router.register('item', ItemViewSet, basename='item')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls))
-] + static(settings.STATIC_url, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
